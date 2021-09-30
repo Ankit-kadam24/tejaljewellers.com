@@ -114,6 +114,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# jump-to-next button
+--------------------------------------------------------------*/
+.jump-to-next {
+  position: absolute;
+  /* visibility: hidden; */
+  opacity: 0;
+  padding-right: 150px;
+
+  z-index: 996;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  border: 2px solid #cda45e;
+}
+
+.jump-to-next i {
+  font-size: 28px;
+  color: #cda45e;
+  line-height: 0;
+}
+
+.jump-to-next:hover {
+  background: #cda45e;
+  color: #1a1814;
+}
+
+.jump-to-next:hover i {
+  color: #444444;
+}
+
+.jump-to-next.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
@@ -444,7 +481,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/New-BG/hero-bg.jpeg") top center;
+  background: url("../img/hero-bg\ new.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
